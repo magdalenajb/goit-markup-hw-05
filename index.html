@@ -18,7 +18,7 @@
             <a class="logo" href="./index.html">
             <span class="web">Web</span><span class="studio">Studio</span></a>
             <ul class="list nav-list-1">
-                <li><a class="navigation" href="#">Agencja</a></li>
+                <li><a class="navigation agency" href="./index.html">Agencja</a></li>
                 <li><a class="navigation" href="./portfolio.html">Portfolio</a></li>
                 <li><a class="navigation" href="#">Kontakt</a></li>
             </ul>
@@ -39,7 +39,7 @@
         <div class="container">
         <div class="theme-button">
         <h1 class="theme-1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="button-1" type="button">Zamów usługę</button></div>
+        <button class="button-1" type="button" data-modal-open>Zamów usługę</button></div>
         </div></section>
 
         <section class="container section lorem-list-1">
@@ -82,23 +82,32 @@
         Czym się zajmujemy</strong>
     </h2>
     <ul class="list"><div class="list-part-1">
-        <li>
+        <li class="box-list">
             <img src="./images/box1.jpg"
             alt="Praca przy komputerze"
             width="370"
             height="294"/>
+            <div class="box-part-1">
+                <h3 class="box-part-1-text">aplikacje komputerowe</h3>
+            </div>
         </li>
-        <li>
+        <li class="box-list">
             <img src="./images/box2.jpg"
             alt="Praca z telefonem przy komputerze"
             width="370"
             height="294"/>
+            <div class="box-part-1">
+                <h3 class="box-part-1-text">aplikacje mobilne</h3>
+            </div>
         </li>
-        <li>
+        <li class="box-list">
             <img src="./images/box3.jpg"
             alt="Praca z tabletem"
             width="370"
             height="294"/>
+            <div class="box-part-1">
+                <h3 class="box-part-1-text">rozwiązania graficzne</h3>
+            </div>
         </li></div>
     </ul></div>
     </section>
@@ -321,6 +330,11 @@
             </ul>
         </div></div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>X</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
