@@ -81,13 +81,13 @@ gap:93px;
 display:flex;
 list-style: none;
 gap: 46px;
-
 }
 
 .kontakt-icon{
 fill:rgba(117, 117, 117, 1);
-
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .nav-list-2{
 display:flex;
 gap: 50px; 
@@ -118,18 +118,17 @@ color:#212121
 }
 
 .navigation:hover, .navigation:focus,
-.kontakt:hover, .kontakt:focus
-{
+.kontakt:hover, .kontakt:focus{
 color: var(--brand-color);
 }
 
 .kontakt:hover, .kontakt:focus-within{
-color:var(--brand-color);
+color: var(--brand-color);
 }
 
-.kontakt:hover .kontact-icon, 
-.kontakt:focus-within .kontact-icon{
-fill:var(--brand-color);
+.kontakt:hover .kontakt-icon,
+.kontakt:focus-within .kontakt-icon{
+ fill: var(--brand-color); 
 }
 
 .kontakt{
@@ -144,10 +143,12 @@ gap:10px;
 align-items: center;
 transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .agency, .portfolio{
-  position:relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+position:relative;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .agency::after, .portfolio::after{
   content:"";
   position:absolute;
