@@ -260,6 +260,10 @@ gap: 15px;
 position:relative;
 }
 
+.box-img{
+  display:block;
+}
+
 .box-part-1{
 position:absolute;
 width:100%;
